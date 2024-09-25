@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <style>
-body {background-color: rgb(0, 0, 0);}
+body {background-color: rgb(140, 140, 140);}
 </style>
 <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@ body {background-color: rgb(0, 0, 0);}
     <title>Formulario</title>
 </head>
 <body>
-    <h2 style="color:rgb(255, 0, 212)">Login somente para cavalheiros.</h2>
+    <h2 style="color:rgb(121, 121, 121)">vai tomar no cu marcineza</h2>
 
 <form >
   <label for="fname" style="color:rgb(255, 0, 212);">Por obsequio, introduza seu usuario:</label><br>
@@ -20,6 +20,31 @@ body {background-color: rgb(0, 0, 0);}
   <input type="submit" value="adentrar">
 </form> 
 
+<p id="demo"  style="color:rgb(255, 0, 212);">o senhor é o meu pastor</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "oh! gloria e aleluia"'>amém</button>
+
+
+<p id="hora">Good Evening!</p>
+<script>
+  if (new Date().getHours() < 22) {
+    document.getElementById("hora").innerHTML = "Caçadora de Jacare";
+  }
+  </script>
+
+  <p id="aula7"></p>
+  <script>
+    const hour = new Date().getHours(); 
+    let greeting;
     
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    
+    document.getElementById("aula7").innerHTML = greeting;
+    </script>
+
+
 </body>
 </html>
